@@ -1,18 +1,29 @@
-
-import './App.css'
-import Header from './components/header'
-import React from 'react'
-
+import "./App.css";
+import Header from "./components/header";
+import React from "react";
+import Registration from "./components/Reg";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import HomePage from "./components/HomePage";
+import Login from "./components/Login";
+import Register from "./components/Register";
 
 function App() {
-
-
   return (
     <>
       <Header />
-      <h1 className='text-red-800 text-2xl '>Hello</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/register" element={<Register />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
