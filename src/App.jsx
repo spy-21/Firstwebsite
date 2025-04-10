@@ -10,6 +10,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import MainPage from "./components/mainPage";
 import StandardCalculator from "./components/Calculator";
+import Music from "./components/music";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Header />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/" element={<Music />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/login" element={<Login />}></Route>
