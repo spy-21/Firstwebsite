@@ -8,6 +8,8 @@ import Contact from "./components/Contact";
 import HomePage from "./components/HomePage";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import MainPage from "./components/mainPage";
+import StandardCalculator from "./components/Calculator";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/register" element={<Register />}></Route>
+          <Route path="/main" element={<MainPage />}></Route>
+          <Route path="calculator" element={<StandardCalculator />}></Route>
         </Routes>
       </BrowserRouter>
     </>
